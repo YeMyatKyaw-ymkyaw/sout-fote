@@ -1,0 +1,415 @@
+a{
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 20px;
+}
+#header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	border: 1px solid transparent;
+	z-index: 50px;
+	background-color: rgba(255,255,255,0.5);
+}
+#header .container .content{
+	width: 150px; 
+	height: 80px;
+}
+#header .container .content img{  /*full dim*/
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /*img beaut*/
+}
+#header i{
+	font-size: 35px;
+	cursor: pointer;
+	color: black;
+}
+#home{
+	padding-top: 100px;
+}
+#home .card{
+	width: 300px;
+	height: 400px;
+	background-color: #DFCCAF;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+
+}
+#home .card > div {
+	height: 70%;
+}
+#home .card p{
+	height: 30%;
+	margin: 5px;
+	color: black;
+}
+#home .card img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px 8px 0 0;
+}
+#home .card:hover{
+	box-shadow: 2px 2px 4px black;
+	cursor: pointer;
+	
+}
+#home .home-container{
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#home .home-container .container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 100px;
+}
+#home .home-container .container p{
+	text-align: center;
+	padding-top: 30px;
+}
+#hero{
+	width: 100%;
+/*	border: 10px solid red;*/
+}
+#hero .hero-img
+{
+	width: 100%;
+
+}
+#hero .hero-img img{
+	width: 100%;
+}
+#welcome{
+	padding: 15px 0;
+	background-image: url("../photo/bak.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#welcome .container img{
+	width: 50%;
+	height: 50%;
+	border-radius: 1100px;
+	border: 2px solid gray;
+}
+#welcome .container h3{
+	padding: 25px;
+	border-radius: 5px;
+	background-color: #513928;
+	color: #f2ebe6;
+
+}
+#welcome1{
+	padding: 15px 0;
+	background-image: url("../photo/beans.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#welcome1 .container img{
+	width: 50%;
+	height: 50%;
+	border-radius: 1100px;
+	border: 2px solid gray;
+}
+#welcome1 .container h3{
+	padding: 25px;
+	border-radius: 5px;
+	background-color: #513928;
+	color: #f2ebe6;
+}
+/*#welcome .container img:hover{
+	transform: translateY(10px);
+}*/
+
+#footer{
+	display: flex;	
+	background-color: #3E3232;
+}
+#footer .container	.logo{
+	width: 	350px;
+	height: 320px;
+}
+#footer .container{
+	display: flex;
+
+}
+#footer .container	.logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+#footer .container	.content .contact{
+	text-align: center;
+}
+#footer .Customer .more{
+	padding: 15px;
+}
+#footer .Customer .more .support{
+	width: 375px;
+	height: 290px;
+	padding: 20px;
+}
+#footer .Customer .more .support .service a{
+	color: black;
+}
+#footer .contact .follow{
+	width: 300px;
+	height: 315px;
+	padding: 20px;
+}
+#footer .contact .follow i{
+	font-size: 35px;
+	text-decoration: none;
+	padding: 23px;
+	color: black;
+	text-align: center;
+	transition: all;
+}
+#footer .contact .follow i:hover{
+	transform: translateY(10px);
+}
+#footer .contact .follow h4{
+	text-align: center;
+}
+#footer .contact .follow .ph-email{
+	width: 250px;
+	height: 185px;
+	padding: 20px;
+}
+#footer .contact .follow .ph-email #submit{
+    background-color: #050302;
+    color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+#footer .contact .follow .ph-email #submit:hover{
+	background-color: #5c412d;
+    transform: scale(1.05);
+}
+#footer .contact .follow .ph-email #submit:focus{
+	outline: none; 
+}
+#footer .contact .follow .ph-email #eamil{
+	padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+    font-size: 20px;  
+    color: #333;  
+    background-color: red;
+}
+#footer .contact .follow .ph-email #eamil:hover{
+	border-color: #888; 
+}
+nav{
+    font-size: 15px;
+}
+.nav-item {
+    display: flex;
+    gap: 20px;
+    transform: translateY(-50%);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #050302; /* Adjust color */
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 15px 50px;
+    display: flex;
+    transition: all .6s;
+}
+.nav-item a:hover {
+ 	background-color: #E2A76F;
+    transform: translateY(10px);
+}
+
+#loginfrom #close-div a{
+	text-decoration: none;
+	color: #000;
+}
+#loginfrom #close-div{
+	position: absolute;
+	top: 	1px;
+	right: 	10px;
+	border-radius: 	15px;
+	padding: 	5px;
+
+}
+#loginfrom .my-div .soc-with-login{
+	width: 350px;
+	height: 150px;
+}
+#loginfrom .my-div .soc-with-login .btn {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+}
+#loginfrom .my-div .soc-with-login .btn:hover {
+  opacity: 1;
+}
+#loginfrom .my-div .soc-with-login .fb {
+  background-color: #3B5998;
+  color: white;
+}
+#loginfrom .my-div .soc-with-login .X{
+  background-color: #55ACEE;
+  color: white;
+}
+#loginfrom .my-div .soc-with-login .google {
+  background-color: #4285F4;
+  color: white;
+}
+#loginfrom .my-div{
+	background-color: #fff;
+	display: none;
+	top: 	15px;
+	right: 10px;
+	width: 400px;
+	height: 500px;
+	position: 	absolute;
+	z-index: 1;
+	padding: 	20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 	8px;
+	text-align: center;
+}
+#loginfrom #my-div:target{
+	display: block;
+}
+.my-div label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.my-div input[type="text"],
+.my-div input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.my-div input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+.my-div button {
+    background-color: #A59D84;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+   	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.my-div button:hover {
+    background-color: #4A4947;
+   transform: scale(1.05);
+
+
+}
+@media (max-width: 500px) {
+    .my-div {
+        width: 90%;
+        padding: 20px;
+    }
+}
+.slideshow-container {
+      width: 100%;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 30px auto;
+}
+.slides {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.active {
+      display: block;
+}
+.prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1000;
+      border-radius: 50%;
+}
+.prev {
+      left: 10px;
+}
+.next {
+      right: 10px;
+}
+.dots-container {
+     text-align: center;
+      margin-top: 10px;
+}
+.dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+}
+.dot.active {
+      background-color: #717171;
+}
+#map{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.show-map {
+    width: 80%;
+    height: 50vh;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
